@@ -90,6 +90,11 @@ class WOWBJ_OT_Import(bpy.types.Operator):
         default=''
     )
 
+    merge_verts: bpy.props.BoolProperty(
+        name='Dedupe Vertices',
+        description='Deduplicate and merge vertices',
+        default=True)
+    )
     reuse_materials: bpy.props.BoolProperty(
         name='Reuse Materials',
         description='Re-use the existing materials in the scene if they match',
